@@ -78,6 +78,25 @@ public class OperacoesLogicas {
 		default: System.out.println("Domingo");
 			break;
 		}
+		
+		/* Operadores relacionais*/
+		
+		if (nota1 == nota2) {
+			System.out.println("São iguais");
+		} else if (nota1 != nota2) {
+			System.out.println("São diferentes");
+		} else if (nota1 > nota2) {
+			System.out.println("nota1 é maior que nota2");
+		} else if (nota1 < nota2) {
+			System.out.println("nota1 é menor que nota2");
+		} else if (nota1 >= nota2) {
+			System.out.println("nota1 é maior ou igual a nota2");
+		} else if (nota1 <= nota2) {
+			System.out.println("nota1 é menor ou igual a nota2");
+		} else {
+			System.out.println("Esses são os operadores relacionais");
+		}
+		
 
 	}
 
