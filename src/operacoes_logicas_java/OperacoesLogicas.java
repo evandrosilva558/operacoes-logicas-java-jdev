@@ -11,7 +11,9 @@ public class OperacoesLogicas {
 		int media;
 		
 		media = (nota1 + nota2 + nota3 + nota4)/4;
-
+		
+		/* Condições Lógicas com IF e ELSE*/
+		
 		if (media >= 70) {
 			System.out.println("Aluno aprovado" + " " + media);
 		}
@@ -23,6 +25,14 @@ public class OperacoesLogicas {
 		else {
 			System.out.println("Aluno reprovado" + " " + media);
 		}
+		
+		/* Operadores Ternários */
+		
+		String saidaResultado;
+		
+		saidaResultado = media >= 70 ? "Aluno aprovado" : (media >= 60) ? "Aluno em reculperação" : "Aluno reprovado";
+		
+		System.out.println(saidaResultado);
 
 	}
 
