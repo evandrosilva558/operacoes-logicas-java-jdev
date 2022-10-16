@@ -9,6 +9,7 @@ public class OperacoesLogicas {
 		int nota3 = 65;
 		int nota4 = 60;
 		int media;
+		String dia = "Terça";
 		
 		media = (nota1 + nota2 + nota3 + nota4)/4;
 		
@@ -44,6 +45,38 @@ public class OperacoesLogicas {
 			}
 		} else {
 			System.out.println("Aluno reprovado " + media);
+		}
+		
+		/* Comando Switch e Case operações EXATAS*/
+		
+		switch (dia) {
+		
+		case "Segunda":
+			System.out.println("Segunda-feira");
+			break;
+			
+		case "Terça":
+			System.out.println("Terça-feira");
+			break;
+			
+		case "Quarta":
+			System.out.println("Quarta-feira");
+			break;
+			
+		case "Quinta":
+			System.out.println("Quinta-feira");
+			break;
+			
+		case "Sexta":
+			System.out.println("Sexta-feira");
+			break;
+			
+		case "Sabado":
+			System.out.println("Sabado");
+			break;
+			
+		default: System.out.println("Domingo");
+			break;
 		}
 
 	}
