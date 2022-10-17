@@ -120,6 +120,15 @@ public class OperacoesLogicas {
 			System.out.println("Nota: " + notas[i]);
 			
 		}
+		
+		/* Módulo Resto da divisão % 'MOD' */
+		
+		double carro = 9;
+		double pessoa = 2;
+		
+		double resto = carro % pessoa;
+		
+		System.out.println("obraram " + resto + " Carro(s)");
 
 	}
 
