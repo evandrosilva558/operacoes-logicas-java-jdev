@@ -8,6 +8,7 @@ public class OperacoesLogicas {
 		int nota2 = 65;
 		int nota3 = 65;
 		int nota4 = 60;
+		int notas[] = {nota1, nota2, nota3, nota4};
 		int media;
 		String dia = "Terça";
 
@@ -111,6 +112,14 @@ public class OperacoesLogicas {
 			System.out.println(j);
 			j++;
 		} while (j <= 10);
+		
+		/* Estrutura de repetição FOR */
+		
+		for (i=1; i <= notas.length; i++) {
+			
+			System.out.println(notas);
+			
+		}
 
 	}
 
