@@ -115,9 +115,9 @@ public class OperacoesLogicas {
 		
 		/* Estrutura de repetição FOR */
 		
-		for (i=1; i <= notas.length; i++) {
+		for (i = 0; i < notas.length; i++) {
 			
-			System.out.println(notas);
+			System.out.println("Nota: " + notas[i]);
 			
 		}
 
