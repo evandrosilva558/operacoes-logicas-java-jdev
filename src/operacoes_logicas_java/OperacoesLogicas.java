@@ -132,7 +132,7 @@ public class OperacoesLogicas {
 		
 		System.out.println("obraram " + resto + " Carro(s)");
 		
-		/* Criando entrada de dados com Swing JOptionPane */
+		/* Criando entrada de dados e caixa de dialogo com Swing JOptionPane */
 		
 		String carros = JOptionPane.showInputDialog("Digite o número de carros?");
 		String pessoas = JOptionPane.showInputDialog("Digite o número de pessoas?");
@@ -144,7 +144,21 @@ public class OperacoesLogicas {
 		
 		double resto2 = CarrosNumero % PessoasNumero;
 		
-		JOptionPane.showMessageDialog(null, "Divisão por pessoas deu " + divisao + " sobraram " + resto2 + " carros.");
+		int resposta = JOptionPane.showConfirmDialog(null, "Deseja ver o resultado da Divisão?");
+		
+		if (resposta == 0) {
+			
+			JOptionPane.showMessageDialog(null, "Divisão por pessoas foi " + divisao + " carros.");
+			
+		}
+		
+		resposta = JOptionPane.showConfirmDialog(null, "Deseja ver o resto da Divisão?");
+		
+		if (resposta == 0) {
+			
+			JOptionPane.showMessageDialog(null, "O resto da divisão foi " + resto2 + " carros.");
+			
+		}
 		
 	}
 
