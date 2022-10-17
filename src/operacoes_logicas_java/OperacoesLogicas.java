@@ -1,5 +1,7 @@
 package operacoes_logicas_java;
 
+import javax.swing.JOptionPane;
+
 public class OperacoesLogicas {
 
 	public static void main(String[] args) {
@@ -129,7 +131,21 @@ public class OperacoesLogicas {
 		double resto = carro % pessoa;
 		
 		System.out.println("obraram " + resto + " Carro(s)");
-
+		
+		/* Criando entrada de dados com Swing JOptionPane */
+		
+		String carros = JOptionPane.showInputDialog("Digite o número de carros?");
+		String pessoas = JOptionPane.showInputDialog("Digite o número de pessoas?");
+		
+		double CarrosNumero = Double.parseDouble(carros);
+		double PessoasNumero = Double.parseDouble(pessoas);
+		
+		int divisao = (int) (CarrosNumero / PessoasNumero);
+		
+		double resto2 = CarrosNumero % PessoasNumero;
+		
+		JOptionPane.showMessageDialog(null, "Divisão por pessoas deu " + divisao + " sobraram " + resto2 + " carros.");
+		
 	}
 
 }
